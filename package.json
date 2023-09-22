@@ -1,0 +1,20 @@
+{
+	"name": "create-advanced-next-app",
+	"license": "MIT",
+	"version": "0.0.1",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsup index.ts --format cjs,esm --dts-resolve --minify --clean --sourcemap",
+		"lint": "tsc --noEmit && eslint . --ext .ts,.tsx",
+		"release": "pnpm run build && changeset publish"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.26.2",
+		"@typescript-eslint/eslint-plugin": "^6.7.2",
+		"@typescript-eslint/parser": "^6.7.2",
+		"tsup": "^7.2.0",
+		"typescript": "^5.2.2"
+	}
+}
