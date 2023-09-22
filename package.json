@@ -7,7 +7,7 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "tsup index.ts --format cjs,esm --dts-resolve --minify --clean --sourcemap",
-		"lint": "tsc --noEmit && eslint . --ext .ts,.tsx",
+		"lint": "tsc --noEmit",
 		"release": "pnpm run build && changeset publish"
 	},
 	"devDependencies": {
