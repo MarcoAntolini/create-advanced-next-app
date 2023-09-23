@@ -1,13 +1,16 @@
 {
 	"name": "create-advanced-next-app",
 	"version": "0.1.0",
+	"description": "Create a Next.js app with some advanced features and custom libraries",
+	"repository": "https://github.com/MarcoAntolini/create-advanced-next-app",
+	"homepage": "https://github.com/MarcoAntolini/create-advanced-next-app#readme",
 	"author": "Marco Antolini",
 	"license": "MIT",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
 	"scripts": {
-		"build": "tsup src/index.ts --format cjs,esm --dts-resolve --minify --clean --sourcemap",
+		"build": "tsup src/index.ts --format cjs,esm --dts-resolve --minify --sourcemap --clean",
 		"lint": "tsc",
 		"release": "pnpm run lint && pnpm run build && changeset publish"
 	},
