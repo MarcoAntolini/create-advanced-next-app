@@ -1,6 +1,6 @@
 {
 	"name": "create-advanced-next-app",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Create a Next.js app with some advanced features and custom libraries",
 	"repository": "https://github.com/MarcoAntolini/create-advanced-next-app",
 	"homepage": "https://github.com/MarcoAntolini/create-advanced-next-app#readme",
