@@ -10,9 +10,12 @@
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
 	"scripts": {
-		"build": "turbo tsup src/index.ts --format cjs,esm --dts-resolve --minify --sourcemap --clean",
-		"lint": "turbo tsc",
-		"release": "turbo pnpm run lint && pnpm run build && changeset publish"
+		"tbuild": "tsup src/index.ts --format cjs,esm --dts-resolve --minify --sourcemap --clean",
+		"tlint": "tsc",
+		"trelease": "pnpm run lint && pnpm run build && changeset publish",
+		"build": "turbo tbuild",
+		"lint": "turbo tlint",
+		"release": "turbo trelease"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.26.2",
