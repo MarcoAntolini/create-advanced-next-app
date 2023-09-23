@@ -10,15 +10,16 @@
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
 	"scripts": {
-		"build": "tsup src/index.ts --format cjs,esm --dts-resolve --minify --sourcemap --clean",
-		"lint": "tsc",
-		"release": "pnpm run lint && pnpm run build && changeset publish"
+		"build": "turbo tsup src/index.ts --format cjs,esm --dts-resolve --minify --sourcemap --clean",
+		"lint": "turbo tsc",
+		"release": "turbo pnpm run lint && pnpm run build && changeset publish"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.26.2",
 		"@typescript-eslint/eslint-plugin": "^6.7.2",
 		"@typescript-eslint/parser": "^6.7.2",
 		"tsup": "^7.2.0",
+		"turbo": "^1.10.14",
 		"typescript": "^5.2.2"
 	}
 }
