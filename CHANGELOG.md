@@ -1,5 +1,11 @@
 # create-advanced-next-app
 
+## 0.2.0
+
+### Minor Changes
+
+- acf0ec5: added turbo
+
 ## 0.1.1
 
 ### Patch Changes
