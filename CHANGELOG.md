@@ -1,5 +1,11 @@
 # create-advanced-next-app
 
+## 0.2.2
+
+### Patch Changes
+
+- 9a8ca8c: add npx command
+
 ## 0.2.1
 
 ### Patch Changes
