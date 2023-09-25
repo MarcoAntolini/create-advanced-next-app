@@ -9,6 +9,9 @@
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
+	"bin": {
+		"create-advanced-next-app": "dist/index.js"
+	},
 	"scripts": {
 		"t-build": "tsup src/index.ts --format cjs,esm --dts-resolve --minify --sourcemap --clean",
 		"t-dev": "tsup src/index.ts --watch",
